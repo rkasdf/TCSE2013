@@ -22,9 +22,3 @@ class Solution:
         if A[start] == target:
             return start
         return -1
-
-A = [3,1]
-target = 1
-a = Solution()
-b = a.search(A,target)
-print b
