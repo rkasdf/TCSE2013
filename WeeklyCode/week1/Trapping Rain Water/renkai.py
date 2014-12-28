@@ -22,10 +22,3 @@ class Solution:
             if minvalue > A[i]:
                 sum += minvalue - A[i]
         return sum
-
-
-
-a = Solution()
-A = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
-print a.trap(A)
-
