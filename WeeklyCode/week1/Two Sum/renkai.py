@@ -18,9 +18,3 @@ class Solution:
             return (index2, index1)
         else:
             return (index1, index2)
-
-numbers = [4, 2, 3, 15]
-target = 6
-a = Solution()
-b = a.twoSum(numbers, target)
-print b
