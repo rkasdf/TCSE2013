@@ -12,10 +12,6 @@ package iscas.leetcode.hty.reverselinklist;
  */
 public class Solution {
 
-    public static void main(String[] args) {
-
-    }
-
     public ListNode reverseBetween(ListNode head, int m, int n) {
 
         ListNode temphead = new ListNode(-1);

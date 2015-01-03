@@ -10,10 +10,6 @@ package iscas.leetcode.hty.duplicatelist2;
  */
 public class Solution {
 
-    public static void main(String[] args) {
-
-    }
-
     /**
      * 记于最后，这个题看上去极简单无比，所以，就根据所思所想，一步一步写了下去，当然很多特殊情况就没有考虑到，而后
      * 当出现bad case 的时候，就硬编码的去改代码，把bad case一个一个的以if-else的方式pass掉。

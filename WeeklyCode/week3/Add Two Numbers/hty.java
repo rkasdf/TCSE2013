@@ -10,10 +10,6 @@ package iscas.leetcode.hty.addtwonumber;
  */
 public class Solution {
 
-    public static void main(String[] args) {
-
-    }
-
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
         ListNode result = new ListNode(0);
