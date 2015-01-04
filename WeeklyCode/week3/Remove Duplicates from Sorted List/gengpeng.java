@@ -14,7 +14,7 @@ public class Solution {
         if(head==null||head.next==null){
             return head;
         }
-        ListNode pre = new ListNode(0);
+        ListNode pre = new ListNode(-1);
         ListNode pNext = head;
         pre.next = head;
         ListNode pCur = pre;
