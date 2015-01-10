@@ -23,14 +23,14 @@ public class Solution {
 	    }
 	    private ListNode getStartNode(ListNode head, int cycle){
 	        if(cycle == 0) return null;
-	        ListNode curNode = head, nextNode = null;
+	        ListNode curNode = head, nextNode = curNode;
+	        for(int i=0;i<cycle;i++){
+	           nextNode = nextNode.next;
+	        }
 	        while(true){
-	        	nextNode = curNode;
-	            for(int i=0;i<cycle;i++){
-	                nextNode = nextNode.next;
-	            }
 	            if(curNode.equals(nextNode)) return curNode;
 	            curNode = curNode.next;
+	            nextNode = nextNode.next;
 	        }
 	    }
 	    public ListNode detectCycle(ListNode head) {
