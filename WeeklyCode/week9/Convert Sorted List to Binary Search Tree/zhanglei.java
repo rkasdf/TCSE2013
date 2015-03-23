@@ -2,15 +2,11 @@ public class Solution {
     private List<Integer> list = new ArrayList<>();
 
     public TreeNode sortedListToBST(ListNode head) {
-        createList(head);
-        return createBST(0, list.size() - 1);
-    }
-
-    private void createList(ListNode head) {
         while (head != null) {
             list.add(head.val);
             head = head.next;
         }
+        return createBST(0, list.size() - 1);
     }
 
     private TreeNode createBST(int start, int end) {
