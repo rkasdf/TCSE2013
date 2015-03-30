@@ -42,15 +42,12 @@ public class Solution {
 	public int sqrt3(int x) {
 		if (x == 0)
 			return 0;
-		double pre;
-		double cur = 1;
+		double result = x;
+		while (Math.abs(result * result - x) > 0.00001) {
+			result = (result + x / result) / 2;
+		}
 
-		do {
-			pre = cur;
-			cur = x / (2 * pre) + pre / 2.0;
-		} while (Math.abs(cur - pre) > 0);
-
-		return (int) cur;
+		return (int) result;
 	}
 
 }
