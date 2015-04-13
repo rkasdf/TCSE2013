@@ -8,7 +8,6 @@ public class Solution {
 	private void dfs(int[] num, List<List<Integer>> result, int start){
 		if(start==num.length) result.add(convertArrToList(num));
 		for(int currIndex=start;currIndex<num.length;currIndex++){
-			if(num[currIndex] == num[start] && currIndex!=start) continue;
 			if(hasDuplicate(num, start,currIndex)) continue;
 			swap(num,start,currIndex);
 			dfs(num,result,start+1);
