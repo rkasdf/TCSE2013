@@ -6,23 +6,23 @@ public class Permutations {
     }
 
     private void permute(List<List<Integer>> res, List<Integer> item, int[] num, int begin) {
-    		if(item.size() == num.length) {
-    			res.add(new ArrayList<>(item));
-    			return;
-    		}
-    		for(int i = begin; i < num.length; i++) {
-    			swap(num, begin, i);
-    			item.add(num[begin]);
-    			permute(res, item, num, begin + 1);
-    			item.remove(item.size() - 1);
-    			swap(num, begin, i);
-    		}
+    	if(item.size() == num.length) {
+    		res.add(new ArrayList<>(item));
+    		return;
+    	}
+    	for(int i = begin; i < num.length; i++) {
+    		swap(num, begin, i);
+    		item.add(num[begin]);
+    		permute(res, item, num, begin + 1);
+    		item.remove(item.size() - 1);
+    		swap(num, begin, i);
+    	}
     }
 
     private void swap(int[] num, int left, int right) {
-    		int tmp = num[left];
-    		num[left] = num[right];
-    		num[right] = tmp;
+    	int tmp = num[left];
+    	num[left] = num[right];
+    	num[right] = tmp;
     }
 }
 
